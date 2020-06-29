@@ -1,0 +1,6 @@
+[submodule "microblog-frontend"]
+	path = microblog-frontend
+	url = https://github.com/gmergola/microblog-frontend.git
+[submodule "microblog-backend"]
+	path = microblog-backend
+	url = https://github.com/gmergola/microblog-backend.git
