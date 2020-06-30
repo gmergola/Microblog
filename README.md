@@ -3,8 +3,11 @@
 An innovative site for communicating on the information superhighway
 
 # Home Page
-Shows all blog posts
 ![website homepage](./images/home.png)
+
+# Show all posts
+Shows all blog posts
+![website PostList](./images/posts.png)
 
 # Post Page
 Shows a specific post's details, a form to edit the post, comments on thar post
