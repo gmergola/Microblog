@@ -5,7 +5,7 @@ import './PostCard.css';
 /* PostCard: Displays condensed details of a post, links to detailed route */
 function PostCard({ postId, postData: { title, description, votes }, handleVotes }) {
   return (
-    <div className="PostCard-body card text-white bg-secondary mb-3">
+    <div className="PostCard-body card">
       <p className="PostCard-header card-header">{title}</p>
       <p className="card-text">{description}</p>
       <div>

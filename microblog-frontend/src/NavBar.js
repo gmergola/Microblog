@@ -1,26 +1,39 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import './NavBar.css';
 
 
 /**
- * Navigation header
+ * NavBar: shows navbar component to navigate around the page
  */
 function NavBar() {
+  const [openNav, setOpenNav] = useState(false);
+
+  function toggleOpen() {
+    setOpenNav(!openNav);
+  }
 
   return (
-    <nav className="navbar navbar-light bg-info">
-     <Link to="/" className="nav-link text-light">
-        Blog
-      </Link>
+    <nav className="navbar navbar-expand navbar-light">
+      <div>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <div
+              className="nav-link dropdown-toggle"
+              onClick={toggleOpen}
+              role="button">
+              <div className="navbar-toggler-icon" ></div>
+            </div>
 
-      <Link to="/" className="nav-link navbar-brand text-light">
-        Microblog!
-      </Link>
+            <div className={`dropdown-menu${openNav ? " show" : ""}`}>
+              <Link to="/blog" className="dropdown-item">B l o g</Link>
+              <Link to="/new" className="dropdown-item">N e w  P o s t</Link>
+            </div>
 
-      <Link to="/new" className="nav-link text-light">
-        New post
-      </Link>
+          </li>
+        </ul>
+      </div>
+      <Link to="/" className="navbar-title"> M i c r o b l o g </Link>
     </nav>
   );
 }

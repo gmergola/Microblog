@@ -1,14 +1,8 @@
 .PostCard-body {
-  margin-left: 17rem;
-  margin-right: 17rem;
+  margin-top: 6rem;
+  width: 500px;
   text-align: center;
-}
-
-@media only screen and (max-width: 2000px) {
-  .PostCard-body {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
+  opacity: 0.8;
 }
 
 .PostCard-header {
@@ -21,4 +15,11 @@
 
 .PostCard-btn {
   margin: 5px;
+}
+
+@media only screen and (max-width: 2000px) {
+  .PostCard-body {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }

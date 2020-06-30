@@ -2,7 +2,8 @@ import React, {useEffect} from 'react';
 import PostCard from './PostCard.js';
 import {useDispatch, useSelector, shallowEqual} from "react-redux";
 import { getPostsFromAPI, clearErr } from "./actionCreators";
-import changeVotes from "./changeVotes"
+import changeVotes from "./changeVotes";
+import './PostList.css';
 
 
 
@@ -35,7 +36,7 @@ function PostList(){
   }
 
   return(
-    <div>
+    <div className="PostList-container">
       {sortPostsByVotes().map(([postId, postData]) => (
       <PostCard
       key={postId}
