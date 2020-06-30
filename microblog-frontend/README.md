@@ -1,6 +1,5 @@
 ## Getting started with Microblog's frontend
 
-Clone the repo
-
-* npm install
-* npm start
+1. Clone the repo
+2. npm install
+3. npm start
