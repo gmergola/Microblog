@@ -15,19 +15,9 @@ All routes are prefixed with `/api` so to fetch posts the route is `GET /api/pos
 
 ## Welcome to Microblog
 An innovative site for communicating on the information superhighway
+* Microblog was built with React and Redux on the frontend paired with Express and PostgreSQL on the backend.
+* Microblog allows any user to post, edit, and delete posts.
+* A user can also up or down vote a blog post as well as comment on it (comments can also be deleted).
 
-# Home Page
-![website homepage](./images/home.png)
-
-# Show all posts
-Shows all blog posts
-![website PostList](./images/posts.png)
-
-# Post Page
-Shows a specific post's details, a form to edit the post, comments on thar post
-![website homepage](./images/post.png)
-
-# New Post from
-A form to write a new post
-![website homepage](./images/newpost.png)
+[Live App Demo](https://nervous-agnesi-2c7074.netlify.app/)
 
