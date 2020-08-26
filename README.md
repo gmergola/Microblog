@@ -19,5 +19,9 @@ An innovative site for communicating on the information superhighway
 * Microblog allows any user to post, edit, and delete posts.
 * A user can also up or down vote a blog post as well as comment on it (comments can also be deleted).
 
+ ### Deployment
+  * Microblog's front end is deployed through Netlify
+  * Microblog's back end is deployed through Heroku
+
 [Live App Demo](https://nervous-agnesi-2c7074.netlify.app/)
 
